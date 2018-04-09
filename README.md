@@ -1,35 +1,39 @@
-# Test title
-
-This guide describes the basic steps you can follow in the new interface. We are working on a more comprehensive description of all the options of the new interface, but this should be enough for you to get started. If you have any doubts, please ask!
+# SWAN Help
 
 * Introduction
-    * [What is SWAN](level_1_1.md)
-    * [Jupyter notebooks](level_1_2.md)
-    * [Cloud storage: CERNBox](level_2_1.md)
-    * [Software: CVMFS](level_2_2.md)
-        * [Test](test.md)
-        * [Test 2](test2.md)
+    * [What is SWAN](intro/what_is.md)
+    * [Jupyter notebooks](intro/jupyter.md)
+    * [Cloud storage: CERNBox](intro/cernbox.md)
+    * [Software: CVMFS](intro/cvmfs.md)
 * Create and manage a SWAN session
-    * [Log in](level_1_11.md)
-    * [Select a configuration](level_1_12.md)
-    * [Set a configuration as default](level_1_13.md)
-    * [Switch to a new configuration](level_1_14.md)
-    * [Terminate a session](level_1_15.md)
-    * [Resume a session](level_1_16.md)
+    * [Log in](session/login.md)
+    * [Select a configuration](session/select.md)
+    * [Set a configuration as default](session/set_default.md)
+    * [Switch to a new configuration](session/switch.md)
+    * [Terminate a session](session/terminate.md)
+    * [Resume a session](session/resume.md)
 * Working with SWAN
-    * [Create a Project](level_1_17.md)
-    * [Create a Notebook](level_1_18.md)
-    * [Create a Folder](level_1_19.md)
-    * [Open a Terminal](level_1_10.md)
+    * [Create a Project](swan/create_proj.md)
+    * [Create a Notebook](swan/create_notebook.md)
+    * [Create a Folder](swan/create_folder.md)
+    * [Open a Terminal](swan/open_terminal.md)
 * Share your work
-    * [Share a Project](level_1_20.md)
-    * [Modify/stop a sharing](level_1_21.md)
-    * [Check what you share](level_1_22.md)
-    * [Check what others share with you](level_1_23.md)
+    * [Share a Project](share/how_to.md)
+    * [Modify/stop a sharing](share/modify.md)
+    * [Check what you share](share/being_shared.md)
+    * [Check what others share with you](share/shared_with_me.md)
 * CERNBox
-    * [Browse files](level_1_24.md)
-    * [Synchronize data from your computer](level_1_25.md)
+    * [Browse files](cernbox/browse.md)
+    * [Synchronize data from your computer](cernbox/sync_files.md)
+* Spark Integration
+    * [Run Spark Locally](spark/local.md)
+    * [Run Spark on CERN Clusters](spark/clusters.md)
+    * [Spark Monitoring](spark/monitoring.md)
 * Advanced setup
-    * [Install packages in CERNBox](level_1_26.md)
-    * [Install and enable notebook extensions](level_1_27.md)
-* [Known issues](level_1_28.md)
+    * [Install packages in CERNBox](advanced/install_packages.md)
+    * [Install and enable notebook extensions](advanced/enable_extensions.md)
+* [Known issues](issues.md)
+
+If you have any doubt or suggestion, contact us through [swan-talk@cern.ch](mailto:swan-talk@cern.ch).
+<br>To get support, submit an issue in [Service Now](https://cern.service-now.com/service-portal/function.do?name=swan)
+<br>Have you found a bug in SWAN? Report it in [Jira](https://its.cern.ch/jira/browse/UCA).
