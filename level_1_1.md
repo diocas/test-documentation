@@ -1,3 +1,5 @@
+# What is SWAN
+
 In this new interface, we also added new functionalities related to Spark, i.e. connection to CERN’s Spark Clusters and a Monitoring tool. Please read below on how to use them.
 
 ### Running Spark Locally
