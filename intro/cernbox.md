@@ -8,7 +8,7 @@ desktops) and multiple users. Everyone with a standard CERN computing account ha
 In SWAN we use it to provide the user storage space and sharing functionalities. To start a session, you need 
 to active your CERNBox account first. To do it, [access this page](https://cernbox.cern.ch).
 
-You will then be able to see all your files from the SWAN interface. And it is here that all your projects and notebooks will live.
+You will then be able to see all your files inside the SWAN interface. All your projects and notebooks will be saved here.
 
 ### EOS
 

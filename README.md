@@ -6,7 +6,6 @@
     * [Cloud storage: CERNBox and EOS](intro/cernbox.md)
     * [Software: CVMFS](intro/cvmfs.md)
 * Create and manage a SWAN session
-    * [Log in](session/login.md)
     * [Select a configuration](session/select.md)
     * [Set a configuration as default](session/set_default.md)
     * [Switch to a new configuration](session/switch.md)
