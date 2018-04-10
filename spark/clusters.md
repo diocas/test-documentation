@@ -37,6 +37,33 @@ You are now ready to start submitting your Spark jobs!
 
 SWAN also provides automatic saving of Spark configuration options: any option added in the configuration menu will be saved in the notebook metadata. This means that every time you open that notebook and use the Spark connector, the configurations will load automatically, so that you do not have to type them again! If you modify them, the changes will be saved.
 
+### Manual configurations
+
+If you like to write your own code to configure Spark, you can do it as before. We already provide a SparkConf object (see below in Spark Monitoring), so you can use it to add your configurations.
+These are the configurations needed to access the cluster:
+
+	
+	conf.set('spark.driver.host', os.environ.get('SERVER_HOSTNAME'))
+    conf.set('spark.driver.port', os.environ.get('SPARK_PORT_1'))
+    conf.set('spark.blockManager.port', os.environ.get('SPARK_PORT_2'))
+    conf.set('spark.ui.port', os.environ.get('SPARK_PORT_3'))
+    conf.set('spark.master', 'yarn')
+    conf.set('spark.authenticate', True)
+    conf.set('spark.network.crypto.enabled', True)
+    conf.set('spark.authenticate.enableSaslEncryption', True)
+    conf.set('spark.executorEnv.LD_LIBRARY_PATH', os.environ.get('LD_LIBRARY_PATH'))
+
+
+If you want to access the Analytics cluster, add the following config:
+
+	extra_class = swan_spark_conf.get('spark.driver.extraClassPath') + ':/eos/project/s/swan/public/hadoop-mapreduce-client-core-2.6.0-cdh5.7.6.jar'
+	swan_spark_conf.set('spark.driver.extraClassPath', extra_class)
+
+Then you just need to create your context and session:
+
+    sc = SparkContext(conf = swan_spark_conf)
+	spark = SparkSession(sc)
+
 
 [spark_clusters]: ../images/spark_clusters.png "Choose Spark Cluster"
 [spark_toolbar]: ../images/spark_toolbar.png "Spark Connector button"
