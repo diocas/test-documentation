@@ -3,7 +3,7 @@
 * Introduction
     * [What is SWAN](intro/what_is.md)
     * [Jupyter notebooks](intro/jupyter.md)
-    * [Cloud storage: CERNBox](intro/cernbox.md)
+    * [Cloud storage: CERNBox and EOS](intro/cernbox.md)
     * [Software: CVMFS](intro/cvmfs.md)
 * Create and manage a SWAN session
     * [Log in](session/login.md)
@@ -21,7 +21,7 @@
     * [Share a Project](share/how_to.md)
     * [Modify/stop a sharing](share/modify.md)
     * [Check what you share](share/being_shared.md)
-    * [Check what others share with you](share/shared_with_me.md)
+    * [Check what others share with you/Clone](share/shared_with_me.md)
 * CERNBox
     * [Browse files](cernbox/browse.md)
     * [Synchronize data from your computer](cernbox/sync_files.md)
