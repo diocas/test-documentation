@@ -5,4 +5,4 @@ If you do not want to select a configuration every time you want to start a sess
 whenever necessary.
 
 If you have problems when starting your session due to this option, please remove from your CERNBox the hidden file named
-".swanrc", that is located inside the folder SWAN_projects.
+".swanrc", that is located inside the folder _SWAN_projects_.
